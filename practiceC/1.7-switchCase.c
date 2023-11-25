@@ -55,6 +55,7 @@ int main()
 
     case '-':
         printf("%lf-%lf= %lf", num1, num2, num1 - num2);
+        break;
 
     default:
         printf("Error! operator is not correct");
