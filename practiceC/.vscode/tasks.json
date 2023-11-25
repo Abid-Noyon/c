@@ -9,7 +9,7 @@
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                "${fileDirname}\\rooster.exe"
             ],
             "options": {
                 "cwd": "${fileDirname}"
@@ -33,7 +33,7 @@
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                "${fileDirname}\\rooster.exe"
             ],
             "options": {
                 "cwd": "${fileDirname}"
@@ -52,7 +52,7 @@
                 "/Zi",
                 "/EHsc",
                 "/nologo",
-                "/Fe${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "/Fe${fileDirname}\\rooster.exe",
                 "${file}"
             ],
             "options": {
