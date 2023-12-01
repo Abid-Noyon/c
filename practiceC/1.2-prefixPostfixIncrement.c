@@ -6,6 +6,8 @@ int main()
     printf("valume m is: %d\n", m);
     int y = m++; // y=m+1
     printf("Value of m and y: %d %d\n", m, y);
+    // printf("%d\n", m);
+    // printf("%d\n", m);
 
     int n = 5; // n = 6
     int x = ++n;
