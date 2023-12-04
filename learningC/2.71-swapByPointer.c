@@ -32,6 +32,7 @@ int main()
     int a, b;
     a = 57;
     b = 786;
+    int c= 33;
     printf("a=%d\t and b=%d\n", a, b);
     swap(&a, &b);
     printf("a=%d\t and b=%d\n", a, b);
