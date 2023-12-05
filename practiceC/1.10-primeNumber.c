@@ -20,26 +20,26 @@
 //     return 0;
 // }
 
-#include <stdio.h>
-int main()
-{
-    int i, number = 4, prime = 1;
-    for (i = 2; i < number; i++)
-    {
-        if (number % i == 0)
-        {
-            prime = 0;
-            break;
-        }
-    }
-    if (prime == 0)
-    {
-        printf("%d is Not a prime number.", number);
-    }
-    else
-        printf("%d is a prime number.", number);
-    return 0;
-}
+// #include <stdio.h>
+// int main()
+// {
+//     int i, number = 4, prime = 1;
+//     for (i = 2; i < number; i++)
+//     {
+//         if (number % i == 0)
+//         {
+//             prime = 0;
+//             break;
+//         }
+//     }
+//     if (prime == 0)
+//     {
+//         printf("%d is Not a prime number.", number);
+//     }
+//     else
+//         printf("%d is a prime number.", number);
+//     return 0;
+// }
 
 // #include <stdio.h>
 
