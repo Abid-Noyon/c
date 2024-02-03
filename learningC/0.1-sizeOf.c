@@ -4,11 +4,11 @@
 
 int main()
 {
-    printf("%zu\n char", sizeof(char));
-    printf("%zu\n int", sizeof(int));
-    printf("%zu\n float", sizeof(float));
-    printf("%lu\n double", sizeof(double));
-    printf("%zu\nlong double", sizeof(long double));
-    printf("%lu\n unsigned int", sizeof(unsigned int));
+    printf("%zu char\n", sizeof(char));
+    printf("%zu int\n", sizeof(int));
+    printf("%zu float\n", sizeof(float));
+    printf("%lu double\n", sizeof(double));
+    printf("%zu long double\n", sizeof(long double));
+    printf("%lu unsigned int\n", sizeof(unsigned int));
     return 0;
 }

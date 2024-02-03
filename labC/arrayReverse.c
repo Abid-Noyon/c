@@ -5,14 +5,15 @@
 int main()
 {
     int i, n, a[100];
+    int sum = 0;
     printf("Inputing an array and displaying it in reverse\n");
     printf("_______________________________________________\n");
-    printf("Input number of array elements: ");
+    printf("Input no of array elements: ");
     scanf("%d", &n);
     printf("Input %d elements. \n", n);
     for (i = 0; i < n; i++)
     {
-        printf("Elements %d: ", i);
+        printf("Element %d: ", i);
         scanf("%d", &a[i]);
     }
     printf("\nThe values stored into the array are in reverse order.");
@@ -21,7 +22,6 @@ int main()
         printf("% 5d", a[i]);
     }
     printf("\n");
-    int sum = 0;
     for (int i = 0; i < n; i++)
     {
         sum += a[i];
