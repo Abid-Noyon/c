@@ -261,19 +261,18 @@
 //     return 0;
 // }
 
+// #include <stdio.h>
+// #include <float.h>
 
-#include <stdio.h>
-#include <float.h>
+// int main()
+// {
+//     printf("float size: %d\n", sizeof(float));
+//     printf("float min: %E\n", FLT_MIN);
+//     printf("float max: %E\n", FLT_MAX);
+//     printf("float precision value: %d\n", DBL_DIG);
 
-int main()
-{
-    printf("float size: %d\n", sizeof(float));
-    printf("float min: %E\n", FLT_MIN);
-    printf("float max: %E\n", FLT_MAX);
-    printf("float precision value: %d\n", DBL_DIG);
-
-    return 0;
-}
+//     return 0;
+// }
 
 // #include <stdio.h>
 
@@ -290,3 +289,20 @@ int main()
 
 //     return 0;
 // }
+
+#include <stdio.h>
+
+int main()
+{
+    int sum = 0, i;
+    for (i = 101; i < 200; i++)
+    {
+        if (i % 7 == 0)
+        {
+            sum += i;
+        }
+    }
+    printf("%d\n", sum);
+
+    return 0;
+}
