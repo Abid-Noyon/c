@@ -49,3 +49,24 @@ displays its square.*/
 //     scanf("%d", &num);
 //     return num * num;
 // }
+
+/*1O. A function called Myfunc( ) has these three parameters: an int
+called count, a float called balance, and a char called Ch, The
+function does not return a value. Show how this fUnction is
+prototyped*/
+
+#include <stdio.h>
+
+void Myfunc(int count, float balance, char ch);
+
+int main()
+{
+    Myfunc(10, 100.78, 'A'); // we can just put the value here or read data from the user
+    return 0;
+}
+void Myfunc(int count, float balance, char ch)
+{
+    printf("Enter count blance and char: ");
+    scanf("%d %f %c", &count, &balance, &ch);
+    printf("You have entered Your count: %d, balance: %f and char: %c", count, balance, ch);
+}
