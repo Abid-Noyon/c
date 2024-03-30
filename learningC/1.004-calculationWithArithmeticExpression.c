@@ -20,23 +20,25 @@
 //     return 0;
 // }
 
-// volume of a cube
 
-// #include <stdio.h>
-// // #include <math.h> to use pow() function
+/* // volume of a cube
+#include <stdio.h>
+// #include <math.h> to use pow() function
 
-// int main(void)
-// {
-//     int a = 2;
-//     int volume = a * a * a;
-//     // int volume = pow(a, 3);
-//     printf("Valume is: %d", volume);
-//     return 0;
-// }
+int main(void)
+{
+    printf("Enter the length of a cube: ");
+    int a;
+    scanf("%d", &a);
+    int volume = a * a * a;
+    // int volume = pow(a, 3);
+    printf("Valume is: %d", volume);
+    return 0;
+} */
 
 // how many seconds in a year;
 
-#include <stdio.h>
+/* #include <stdio.h>
 
 int main()
 {
@@ -44,4 +46,4 @@ int main()
     seconds = 24 * 60 * 60 * 365;
     printf("Seconds in each day: %d", seconds);
     return 0;
-}
+} */
