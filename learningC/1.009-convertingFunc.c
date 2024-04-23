@@ -1,22 +1,23 @@
-// #include <stdio.h>
+/* #include <stdio.h>
 
-// float convert(void);
+float convert(void);
 
-// float main(void)
-// {
-//     float pound;
-//     pound = convert();
-//     printf("Equivalent pound: %.2f", pound);
-//     return 0;
-// }
+float main(void)
+{
+    float pound;
+    pound = convert();
+    printf("Equivalent pound: %.2f", pound);
+    return 0;
+}
 
-// float convert(void)
-// {
-//     float doller;
-//     printf("Enter amount in doller: ");
-//     scanf("%f", &doller);
-//     return doller / 2;
-// }
+float convert(void)
+{
+    float doller;
+    printf("Enter amount in doller: ");
+    scanf("%f", &doller);
+    
+    return doller / 2;
+} */
 
 // /*Data type error*/
 // #include <stdio.h>

@@ -1,36 +1,40 @@
-// #include <stdio.h>
+#include <stdio.h>
 
-// int main()
-// {
-//     int mark, index;
-//     printf("Enter your mark: ");
-//     scanf("%d", &mark);
-//     index = mark / 10;
-//     switch (index)
-//     {
-//     case 10:
-//     case 9:
-//     case 8:
-//         printf("Excellent");
-//         break;
-//     case 7:
-//     case 6:
-//         printf("Very good.");
-//         break;
-//     case 5:
-//     case 4:
-//         printf("Good");
-//         break;
-//     default:
-//         printf("bad");
-//         break;
-//     }
-//     return 0;
-// }
+int main()
+{
+    int mark, index;
+    printf("Enter your mark: ");
+    scanf("%d", &mark);
+    index = mark / 10;
+    switch (index)
+    {
+    case 10:
+    case 9:
+    case 8:
+        printf("Excellent");
+        break;
+    case 7:
+    case 6:
+        printf("Very good.");
+        break;
+    case 5:
+    case 4:
+        printf("Good");
+        break;
+
+    case 3: 
+    printf("c");
+    break;
+    default:
+        printf("fail");
+        break;
+    }
+    return 0;
+}
 
 // calculator by swith case
 
-#include <stdio.h>
+/* #include <stdio.h>
 
 int main()
 {
@@ -66,4 +70,4 @@ int main()
         break;
     }
     return 0;
-}
+} */
