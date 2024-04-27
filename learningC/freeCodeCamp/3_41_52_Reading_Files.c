@@ -1,4 +1,4 @@
-#include <stdio.h>
+/* #include <stdio.h>
 
 int main()
 {
@@ -10,4 +10,22 @@ int main()
     printf("%s", line);
     fclose(fpointer);
     return 0;
+} */
+
+// _________________________________________________
+
+/* // practice 1
+
+#include <stdio.h>
+
+int main()
+{
+    char line[255];
+    FILE *messUsageP = fopen("MessUsage.txt", "r");
+    // fgets(messUsageP, 255, line); Mistake i made before. correct code below
+    fgets(line, 255, messUsageP);
+    printf("%s", line);
+    fclose(messUsageP);
+    return 0;
 }
+// succesfully retrived data for practice 1 */
