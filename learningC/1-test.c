@@ -188,25 +188,34 @@ int main()
             scanf("%d", &b[i][j]);
         }
     }
+
+    // sum o f the matric
+
+    int c[2][2];
+    c[0][0] = a[0][0] + b[0][0];
+    c[0][1] = a[0][1] + b[0][1];
+    c[1][0] = a[1][0] + b[1][0];
+    c[1][1] = a[1][1] + b[1][1];
+
     // showing matrix user entered
-    printf("Matrix a: \n");
-    for (i = 0; i < 2; i++)
-    {
-        for (j = 0; j < 2; j++)
+        printf("Matrix a: \n");
+        for (i = 0; i < 2; i++)
         {
-            printf("\t%d", a[i][j]);
+            for (j = 0; j < 2; j++)
+            {
+                printf("\t%d", c[i][j]);
+            }
+            printf("\n");
         }
-        printf("\n");
-    }
-    printf("Matrix b: \n");
-    for (i = 0; i < 2; i++)
-    {
-        for (j = 0; j < 2; j++)
+    /*    printf("Matrix b: \n");
+        for (i = 0; i < 2; i++)
         {
-            printf("\t%d", b[i][j]);
-        }
-        printf("\n");
-    }
+            for (j = 0; j < 2; j++)
+            {
+                printf("\t%d", b[i][j]);
+            }
+            printf("\n");
+        } */
     return 0;
 }
 
