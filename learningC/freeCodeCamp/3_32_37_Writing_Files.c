@@ -34,7 +34,7 @@ int main()
 } */
 
 // practice no 1 date 27 april, 24
-#include <stdio.h>
+/* #include <stdio.h>
 
 int main()
 {
@@ -42,6 +42,19 @@ int main()
     FILE *messUsageP = fopen("MessUsage.txt", "a");
     // fprintf(messUsageP, "Wlc! This is a mess database");
     fprintf(messUsageP, "\nName: Abid\nJobber \nNasim");
+    fclose(messUsageP);
+    return 0;
+} */
+
+// practice 2 of reading and writing files
+
+#include <stdio.h>
+
+int main()
+{
+    // FILE *messUsageP = fopen("MessUsage.txt", "w");
+    FILE *messUsageP = fopen("MessUsage.txt", "a"); // we will append file
+    fprintf(messUsageP, "\nAbid\nJobber\nNasim"); // its better to start with a new line using \n
     fclose(messUsageP);
     return 0;
 }

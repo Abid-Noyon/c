@@ -29,3 +29,21 @@ int main()
     return 0;
 }
 // succesfully retrived data for practice 1 */
+
+// practice 2 reading from file MessUsage
+
+#include <stdio.h>
+
+int main()
+{
+    char line[255];
+    FILE *messUsageP = fopen("MessUsage.txt", "r");
+    // to read multiple files we can use for loop
+    for (int i = 1; i <= 2; i++)
+    {
+        fgets(line, 255, messUsageP);
+        printf("%s", line);
+    }
+    fclose(messUsageP);
+    return 0;
+}

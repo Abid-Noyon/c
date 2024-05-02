@@ -1,4 +1,2 @@
-int age;
-    printf("Enter your age: ");
-    scanf("%d", &age);
-    printf("You are: %d", age);
+    fgets(line, 255, messUsageP);
+    printf("%s", line);
