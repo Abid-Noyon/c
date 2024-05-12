@@ -1,4 +1,4 @@
-/* #include <stdio.h>
+#include <stdio.h>
 
 int main()
 {
@@ -10,7 +10,7 @@ int main()
     printf("%s", line);
     fclose(fpointer);
     return 0;
-} */
+}
 
 // _________________________________________________
 
@@ -32,7 +32,7 @@ int main()
 
 // practice 2 reading from file MessUsage
 
-#include <stdio.h>
+/* #include <stdio.h>
 
 int main()
 {
@@ -46,4 +46,17 @@ int main()
     }
     fclose(messUsageP);
     return 0;
-}
+} */
+
+/* // practice 3
+#include <stdio.h>
+
+int main(void)
+{
+    char line[255];
+    FILE *employeTextP = fopen("EmployeText.txt", "r");
+    fgets(line, 255, employeTextP);
+    printf("%s", line);
+    fclose(employeTextP);
+    return 0;
+} */

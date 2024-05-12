@@ -1,4 +1,4 @@
-/* #include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 
 int main()
@@ -13,7 +13,7 @@ int main()
 
     fclose(fpointer);
     return 0;
-} */
+}
 
 // ----------------------------------------------
 /* // This is a test program to take input from user and write it down on a text file
@@ -48,7 +48,7 @@ int main()
 
 // practice 2 of reading and writing files
 
-#include <stdio.h>
+/* #include <stdio.h>
 
 int main()
 {
@@ -57,4 +57,19 @@ int main()
     fprintf(messUsageP, "\nAbid\nJobber\nNasim"); // its better to start with a new line using \n
     fclose(messUsageP);
     return 0;
-}
+} */
+
+// file writing practice 3
+
+/* #include <stdio.h>
+
+int main(void)
+{
+    // FILE *employeTextP = fopen("EmployeText.txt", "w");
+    // after writing we will append to add new text
+    FILE *employeTextP = fopen("EmployeText.txt", "a");
+    // its better to start with \n while append
+    fprintf(employeTextP, "\nName of the people");
+    fclose(employeTextP);
+    return 0;
+} */
