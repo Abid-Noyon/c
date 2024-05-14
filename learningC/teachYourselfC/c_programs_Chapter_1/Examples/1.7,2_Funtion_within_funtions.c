@@ -1,5 +1,7 @@
 /* This program has three functions. */
 
+/*_Funtion_within_funtions */
+
 #include <stdio.h>
 
 void func1(void);  /* prototypes */
@@ -16,10 +18,10 @@ int main(void)
 void func2(void)
 {
     func1();
-    printf("2");
+    printf("2 ");
 }
 
 void func1(void)
 {
-    printf("1");
+    printf("1 ");
 }

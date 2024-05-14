@@ -6,8 +6,8 @@ int main(void)
 {
     int sqr;
 
-    sqr=get_sqr();
-    printf("Square: %d",sqr);
+    sqr = get_sqr();
+    printf("Square: %d", sqr);
 
     return 0;
 }
@@ -17,7 +17,7 @@ int get_sqr(void)
     int num;
 
     printf("Enter a number:");
-    scanf("%d",&num);
+    scanf("%d", &num);
 
-    return num*num;  /* square the number */
+    return num * num; /*_square_the_number */
 }

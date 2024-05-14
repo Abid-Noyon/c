@@ -16,3 +16,5 @@ void func1(void)
     printf("This is not printed.");
 
 }
+
+//_return_use

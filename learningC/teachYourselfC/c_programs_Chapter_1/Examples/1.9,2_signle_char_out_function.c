@@ -15,3 +15,5 @@ void outchar(char ch)
 {
     printf("%c",ch);
 }
+
+// writing_signle_char_out_function
