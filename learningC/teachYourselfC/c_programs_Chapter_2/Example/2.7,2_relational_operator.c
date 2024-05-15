@@ -1,3 +1,4 @@
+//_relational_operator
 #include <stdio.h>
 int main(void)
 {
@@ -6,7 +7,7 @@ int main(void)
     scanf("%d", &i);
     printf("Enter second number: ");
     scanf(" %d", &j);
-    /* relational operations */
+    // relational operations
     printf("i < j %d\n", i < j);
     printf("i <= j %d\n", i <= j);
     printf("i == j %d\n", i == j);

@@ -18,3 +18,4 @@ int main(void)
 int xor (int a, int b) {
     return (a || b) && !(a && b);
 }
+//_and_or_not_xor
