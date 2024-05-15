@@ -5,9 +5,9 @@ int main(void)
     printf("Enter first number: ");
     scanf("%d", &i);
     printf("Enter second number: ");
-    scanf ( " %d" , &j);
+    scanf(" %d", &j);
     /* relational operations */
-    printf("i < j %d\n",i < j);
+    printf("i < j %d\n", i < j);
     printf("i <= j %d\n", i <= j);
     printf("i == j %d\n", i == j);
     printf("i > j %d\n", i > j);
@@ -15,6 +15,6 @@ int main(void)
     /* logical operations */
     printf("i && j %d\n", i && j);
     printf("i || j %d\n", i || j);
-    printf ( "!i !j %d %d\n", !i, !j);
+    printf("!i !j %d %d\n", !i, !j);
     return 0;
 }

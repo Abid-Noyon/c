@@ -1,7 +1,8 @@
+//_backward_slash_a
 #include <stdio.h>
 int main(void)
 {
-    printf("one\ntwo\nthree\nfour");
+    printf("\a");
 
     return 0;
 }

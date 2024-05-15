@@ -1,3 +1,4 @@
+//_factor_of_number
 #include <stdio.h>
 int main() {
 

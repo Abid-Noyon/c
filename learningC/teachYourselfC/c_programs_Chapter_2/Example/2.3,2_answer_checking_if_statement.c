@@ -1,3 +1,4 @@
+//_answer_checking_if_statement
 #include <stdio.h>
 int main(void)
 {
@@ -13,6 +14,3 @@ int main(void)
     
     return 0;
 }
-
-
-
