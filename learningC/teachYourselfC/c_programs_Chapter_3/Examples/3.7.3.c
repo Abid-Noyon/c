@@ -6,7 +6,7 @@ int main()
     char ch;
 
     do{
-        printf("love,Save,Edit,Quit?\n");
+        printf("Load,Save,Edit,Quit?\n");
 
     do{
     printf("Enter your selection:");

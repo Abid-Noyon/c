@@ -19,7 +19,7 @@ int main()
 }
 
 
-// puting periods upto Ascii value of a number
+//_puting_periods_upto_Ascii_value_of_a_number
 /* #include <stdio.h>
 
 int main()
