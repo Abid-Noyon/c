@@ -1,4 +1,4 @@
- #include<stdio.h>
+#include<stdio.h>
 
 int series(int x);
 int main()
@@ -21,3 +21,4 @@ int main()
 		return a;
 		
 	}
+	//4.5.1_type_conversion.c

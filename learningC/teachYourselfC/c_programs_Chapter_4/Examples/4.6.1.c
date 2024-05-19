@@ -1,17 +1,15 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main(){
-
+int main()
+{
 
     int i;
     float f;
 
-    f=1234.0098;
-    i=f;
+    f = 1234.0098;
+    i = f;
 
-    printf("%f %d",f,i);
+    printf("%f %d", f, i);
 
     return 0;
-
-
-    }
+}
