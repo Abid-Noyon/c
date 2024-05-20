@@ -5,7 +5,7 @@ int main(void)
     int temp[31],i,min,max,avg;
     int days;
     
-    printf("How many days in the month? ");
+    printf("How many days in the month?: ");
     scanf("%d",&days);
     
     for(i=0;i<days;i++)
