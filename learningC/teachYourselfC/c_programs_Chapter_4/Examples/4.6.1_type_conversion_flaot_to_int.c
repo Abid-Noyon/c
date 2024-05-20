@@ -5,6 +5,7 @@ int main()
 
     int i;
     float f;
+    // double f;
 
     f = 1234.0098;
     i = f;
@@ -13,3 +14,4 @@ int main()
 
     return 0;
 }
+//_type_conversion_flaot_to_int
