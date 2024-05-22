@@ -6,7 +6,7 @@ int main(void)
     int i;
 
     for (i = 1; i < 11; i++)
-        a1[i - 1] = i;
+        a1[i - 1] = i; // storing values 1-10
 
     for (i = 0; i < 10; i++)
         a2[i] = a1[i];
@@ -16,4 +16,5 @@ int main(void)
 
     return 0;
 }
+
 //_copying_array_for_loop

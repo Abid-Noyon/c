@@ -6,9 +6,9 @@ int main()
     char str1[80],str2[80];
     int i;
     
-    printf("Enter the first string:");
+    printf("Enter the first string: ");
     gets(str1);
-    printf("Enter the second string:");
+    printf("Enter the second string: ");
     gets(str2);
     
     //see how long the string are
@@ -34,3 +34,4 @@ int main()
 
     return 0;
 }
+//_string_operation
