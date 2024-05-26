@@ -43,7 +43,7 @@ int main(void)
 
 // version 2
 // array sorting
-#include <stdio.h>
+/* #include <stdio.h>
 
 int main(void)
 {
@@ -84,5 +84,43 @@ int main(void)
         printf("%d\t", sort[t]);
     }
     return 0;
-}
+} */
 //_array_sorting
+
+// practice 3 26 may, 24
+#include <stdio.h>
+
+int main()
+{
+    int a, b, t, maxCount;
+    float sort[100], temp;
+    printf("How many numbers you wanna sort(max 100): ");
+    scanf("%d", &maxCount);
+
+    // getting array elements
+    for (a = 0; a < maxCount; a++)
+    {
+        printf("Enter value for element %d: ", a + 1);
+        scanf("%f", &sort[a]);
+    }
+    // sorting elements
+    for (a = 0; a < maxCount; ++a)
+    {
+        for (b = maxCount - 1; b >= a; --b)
+        {
+            if (sort[b - 1] > sort[b])
+            {
+                temp = sort[b - 1];
+                sort[b - 1] = sort[b];
+                sort[b] = temp;
+            }
+        }
+    }
+    printf("\nThe sorted array: \n");
+    for (t = 0; t < maxCount; t++)
+    {
+        printf("%.2f\t", sort[t]);
+    }
+
+    return 0;
+}

@@ -10,3 +10,4 @@ int main()
 
     return 0;
 }
+//_string_array_copy

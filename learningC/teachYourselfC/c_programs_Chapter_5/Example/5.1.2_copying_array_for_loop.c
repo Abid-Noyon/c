@@ -9,7 +9,7 @@ int main(void)
         a1[i - 1] = i; // storing values 1-10
 
     for (i = 0; i < 10; i++)
-        a2[i] = a1[i];
+        a2[i] = a1[i]; // copying values
 
     for (i = 0; i < 10; i++)
         printf(" %d\n", a2[i]);

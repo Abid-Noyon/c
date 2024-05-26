@@ -10,7 +10,7 @@ int main()
         5, 15};
 
     int server, i;
-    printf("Enter the server number:");
+    printf("Enter the server number: ");
     scanf("%d", &server);
 
     // look it up in the server
@@ -29,3 +29,5 @@ int main()
 
     return 0;
 }
+
+//_multidimentional_array_initialization
