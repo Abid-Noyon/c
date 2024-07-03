@@ -19,7 +19,7 @@ int main()
     // printf("Number Address: %p\n Double: %p\n char: %p\n", pAge, pGpa, pGrade);
 
     // defererencing pointer means what is in that address of pointer
-    printf("Number Address: %d\n Double: %lf\n char: %c\n", *pAge, *pGpa, *pGrade);
+    // printf("Number Address: %d\n Double: %lf\n char: %c\n", *pAge, *pGpa, *pGrade);
     return 0;
 }
 

@@ -26,7 +26,7 @@ int main()
 
 // matrix multiplication
 
-#include <stdio.h>
+/* #include <stdio.h>
 
 int main()
 {
@@ -56,5 +56,38 @@ int main()
         printf("\n");
     }
     return 0;
+} */
+
+// matrix multiplication practice 3
+
+#include <stdio.h>
+
+int main(void)
+{
+    int mat1[2][2] = {
+        {1, 2},
+        {5, 6}};
+    int mat2[2][2] = {
+        {6, 7},
+        {9, 10}};
+    int multiMat[2][2];
+
+    multiMat[0][0] = mat1[0][0] * mat2[0][0] + mat1[0][1] * mat2[1][0];
+    multiMat[0][1] = mat1[0][0] * mat2[0][1] + mat1[0][1] * mat2[1][1];
+    multiMat[1][0] = mat1[1][0] * mat2[0][0] + mat1[1][1] * mat2[1][0];
+    multiMat[1][1] = mat1[1][0] * mat2[0][1] + mat1[1][1] * mat2[1][1];
+
+    // showing multiplication result
+    printf("Result: \n");
+    for (int i = 0; i < 2; i++)
+    {
+        for (int j = 0; j < 2; j++)
+        {
+            printf("\t%d", multiMat[i][j]);
+        }
+        printf("\n");
+        
+    }
+    
+    return 0;
 }
-// 3_09_10_Memory_Addresses

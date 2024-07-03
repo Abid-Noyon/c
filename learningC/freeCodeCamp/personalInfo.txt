@@ -1,0 +1,2 @@
+Hi this a new line for the newly created text file.
+Hi this a second line for the newly created text file.

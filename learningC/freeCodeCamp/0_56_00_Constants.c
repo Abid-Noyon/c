@@ -8,7 +8,7 @@ int main()
     // const int NUM = 10;
     const int num = 10;
     printf("The num: %d\n", num);
-    // num = 12;
+    // num = 12; //what it says in compiler: assignment of read-only variable 'num'
     printf("The num: %d\n", num);
     return 0;
 }

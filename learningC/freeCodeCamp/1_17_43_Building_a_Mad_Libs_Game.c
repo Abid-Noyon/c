@@ -8,10 +8,10 @@ int main()
 
     printf("Enter a color: ");
     scanf("%s", color);
-    getchar();
+    // getchar();
     printf("Enter a plural noun: ");
     scanf("%s", pluralNoun);
-    getchar();
+    // getchar();
     printf("Enter a celebrity: ");
     // scanf("%s", celebrity);
     fgets(celebrity, 20, stdin);

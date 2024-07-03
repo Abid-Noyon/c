@@ -1,19 +1,19 @@
-#include <stdio.h>
-#include <stdlib.h>
+// /* #include <stdio.h>
+// #include <stdlib.h>
 
-int main()
-{
-    // FILE *fpointer = fopen("employees.txt", "w");
-    // fprintf(fpointer, "hello!");
-    // with w mode if file not exists it will create and everything will be overwritten
-    // fprintf(fpointer, "Overwritten  ");
-    // to write after existence text use a mode
-    FILE *fpointer = fopen("employees.txt", "a");
-    fprintf(fpointer, "\nI am Abid.");
+// int main()
+// {
+//     // FILE *fpointer = fopen("employees.txt", "w");
+//     // fprintf(fpointer, "hello!");
+//     // with w mode if file not exists it will create and everything will be overwritten
+//     // fprintf(fpointer, "Overwritten  ");
+//     // to write after existence text use a mode
+//     FILE *fpointer = fopen("employees.txt", "a");
+//     fprintf(fpointer, "\nI am Abid.");
 
-    fclose(fpointer);
-    return 0;
-}
+//     fclose(fpointer);
+//     return 0;
+// } */
 
 // ----------------------------------------------
 /* // This is a test program to take input from user and write it down on a text file
@@ -71,5 +71,36 @@ int main(void)
     // its better to start with \n while append
     fprintf(employeTextP, "\nName of the people");
     fclose(employeTextP);
+    return 0;
+} */
+
+// Practice date:  3 july, 2024
+/* // creating file
+#include <stdio.h>
+
+int main(void)
+{
+    // FILE *pPersonalDetails = fopen("personalInfo.txt", "w");
+    // fprintf(pPersonalDetails, "Hi this a new line for the newly created text file.");
+    // fclose(pPersonalDetails);
+
+    // now after creating this file lets append some extra line
+
+    // FILE *pPersonalDetails = fopen("personalInfo.txt", "a");
+    // fprintf(pPersonalDetails, "\nHi this a second line for the newly created text file.");
+    // fclose(pPersonalDetails);
+
+    // creating and wrting text file is done now lets see what is in that file means reading that file for that comment the above code
+
+    // we need an array for holding text
+    // lets create that array
+    char text[255];
+    FILE *p = fopen("personalInfo.txt", "r");
+    fgets(text, 255, p);
+    printf(text);
+    fgets(text, 255, p);
+    printf(text);
+    fclose(p);
+
     return 0;
 } */
