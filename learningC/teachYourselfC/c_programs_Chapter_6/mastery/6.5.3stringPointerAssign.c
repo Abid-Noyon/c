@@ -11,12 +11,28 @@ int main(void)
 } */
 
 // version 2
-#include <stdio.h>
+/* #include <stdio.h>
 
 int main(void)
 {
     char a[90];
     char *p = a;
+    printf("Enter a string: ");
+    gets(p);
+    printf(p);
+
+    return 0;
+} */
+
+// practicing 1
+#include <stdio.h>
+
+int main(void)
+{
+    // char a[90];
+    // char *p = a;
+    char a[90], *p; // declaring char array and pointer in a line
+    p = a; // assigning array address to pointer 
     printf("Enter a string: ");
     gets(p);
     printf(p);

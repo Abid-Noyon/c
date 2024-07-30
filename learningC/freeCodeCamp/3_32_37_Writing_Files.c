@@ -75,7 +75,7 @@ int main(void)
 } */
 
 // Practice date:  3 july, 2024
-/* // creating file
+// creating file
 #include <stdio.h>
 
 int main(void)
@@ -103,4 +103,4 @@ int main(void)
     fclose(p);
 
     return 0;
-} */
+}

@@ -8,7 +8,7 @@ int main()
     p = &temp;
     q = *p;
 
-    printf("%f", q);
+    printf("%lf", q);
 
     return 0;
 }

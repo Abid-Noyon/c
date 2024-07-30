@@ -1,4 +1,4 @@
-/* #include <stdio.h>
+#include <stdio.h>
 
 int main(void)
 {
@@ -13,9 +13,9 @@ int main(void)
     p = (float *)balance; // This will not give a warning
     printf("The value of balance[2][3] is %f\n", *(p + 2 * 4 + 3));
     return 0;
-} */
+}
 
-#include <stdio.h>
+/* #include <stdio.h>
 
 int main()
 {
@@ -23,4 +23,4 @@ int main()
     *(str+3)= 'c';
     printf("%c", *(str+3));
     return 0;
-}
+} */
