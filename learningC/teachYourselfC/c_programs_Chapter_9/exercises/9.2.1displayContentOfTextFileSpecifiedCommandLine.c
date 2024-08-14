@@ -10,8 +10,9 @@ int main(int argc, char *argv[])
     if(argc!=2){
         
         exit (1);
-    }
     
+    
+    }
     
     if((fp = fopen(argv[1], "r"))==NULL) {
         printf("Cannot open file.\n");
@@ -21,9 +22,5 @@ int main(int argc, char *argv[])
     while((ch=fgetc(fp)) != EOF) putchar(ch);
     
     fclose(fp) ;
-    
     return 0;
 }
-
-
-

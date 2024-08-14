@@ -31,3 +31,29 @@ int main()
     printf("\nYou entered: %c\n", ch);
     return 0;
 } */
+
+
+// practice 1 14 july
+// getchar
+/* #include <stdio.h>
+
+int main(void)
+{
+    char ch;
+    printf("Enter a character: ");
+    ch = getchar();
+    printf("\nYou entered: %c", ch);
+    return 0;
+} */
+
+// getche
+#include <stdio.h>
+#include <conio.h>
+int main(void)
+{
+    char ch;
+    printf("Enter a character: ");
+    ch = getche();
+    printf("\nYou entered:  %c", ch);
+    return 0;
+}

@@ -57,7 +57,7 @@ int main(void)
 
 // practice 1 for basic creating and putting data in a file also read the file
 
-#include <stdio.h>
+/* #include <stdio.h>
 #include <stdlib.h>
 
 int main(void)
@@ -107,6 +107,61 @@ int main(void)
 
     // now dont forget to close file
 
+    fclose(fp);
+
+    return 0;
+} */
+
+// practise 3
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+    FILE *fp;
+    char str[80] = "This is the data to be written in the file\n";
+    char *p;
+    int i; // for storing char
+
+    // open for writing
+    if ((fp = fopen("data.txt", "w")) == NULL)
+    {
+        printf("Error opening file\n");
+        exit(1);
+    }
+
+    // writing the data
+    p = str; // assigning string data to a pointer char
+    while (*p)
+    {
+        if ((fputc(*p, fp)) == EOF)
+        {
+            printf("Error writing data\n");
+            exit(1);
+        }
+        p++; // dont write it within if block then it will go to infinite loop
+    }
+
+    // now close the file
+    fclose(fp);
+
+    // now reopen file for reading data
+    if ((fp = fopen("data.txt", "r")) == NULL)
+    {
+        printf("Error opening file for reading data\n");
+        exit(1);
+    }
+
+    // now read and show data
+    for (;;)
+    {
+        i = fgetc(fp);
+        if (i == EOF)
+        {
+            break;
+        }
+        putchar(i);
+    }
     fclose(fp);
 
     return 0;
