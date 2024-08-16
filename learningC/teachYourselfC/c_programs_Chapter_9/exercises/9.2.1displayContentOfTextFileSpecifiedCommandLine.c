@@ -8,7 +8,7 @@ int main(int argc, char *argv[])
 
     // see if filename is specified
     if (argc != 2)
-    // {
+    {
 
         exit(1);
     }
