@@ -39,7 +39,7 @@ int main(int argc, char *argv[])
 }
  */
 
-#include <stdio.h>
+/* #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
 
@@ -81,6 +81,53 @@ int main(int argc, char *argv[])
     }
 
     // now must close file
+    fclose(fp);
+
+    return 0;
+} */
+
+
+// this is practice 3 
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+
+int main(int argc, char *argv[]) // first we have make main func to accecpt command line arg
+{
+    FILE *fp; // we need a file pointer for file operation
+    char ch;    // for storing char
+    int wordCount[26]={0};
+
+    // first we will check if user provided file name as cmd line arg or not
+    if (argc!=2)
+    {
+        printf("please provide a file name as command line arguement.\n");
+        exit(1);
+    }
+    
+    //now open file in fp pointer
+    if ((fp=fopen(argv[1], "r"))==NULL)
+    {
+        printf("Can't open file.\n");
+        exit(1);
+    }
+    // now read and store file char
+    while ((ch=fgetc(fp))!=EOF)
+    {
+        ch=toupper(ch); // for checking small and capital all letters
+        if (ch>='A' && ch<= 'Z') // for checking only letters
+        {
+            wordCount[ch-'A']++;
+        }
+        
+    }
+
+    for (int i = 0; i < 26; i++)
+    {
+        printf("%c found %d times.\n", i+ 'A', wordCount[i]);
+    }
+    
     fclose(fp);
 
     return 0;
