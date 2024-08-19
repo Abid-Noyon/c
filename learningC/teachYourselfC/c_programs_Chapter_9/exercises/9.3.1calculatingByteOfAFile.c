@@ -8,7 +8,7 @@ int main(int argc, char *argv[])
     FILE *fp;
     unsigned count;
 
-    /* see if file name is specified */
+    // see if file name is specified
     if (argc != 2)
     {
         printf("File name missing.\n");
@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
         count++;
     }
 
-    printf("File has %u bytes", count - 1);
+    printf("File has %u bytes", count - 1); // It's worth noting that this program counts the number of characters in the file, not the number of bytes. In most cases, a character corresponds to a byte, but in some cases, such as when dealing with multibyte characters or encoding schemes like UTF-8, a character may occupy multiple bytes.
     fclose(fp);
 
     return 0;
