@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
     // see if filename is specified
     if (argc != 2)
     {
-
+        printf("provide a file name is command line arguement\n");    
         exit(1);
     }
 
@@ -36,8 +36,8 @@ int main(int argc, char *argv[])
     fclose(fp);
 
     return 0;
-}
- */
+} */
+
 
 /* #include <stdio.h>
 #include <stdlib.h>

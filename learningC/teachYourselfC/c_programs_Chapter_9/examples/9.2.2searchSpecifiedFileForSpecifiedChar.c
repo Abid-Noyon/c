@@ -1,4 +1,4 @@
-/* // Search speGified file for specified character.
+/* // Search specified file for specified character.
 #include <stdio.h>
 #include <stdlib.h>
 int main(int argc, char *argv[])
@@ -55,14 +55,18 @@ int main(int argc, char *argv[])
     }
 
     // search for the char
+    int found = 0;
     while ((ch = fgetc(fp)) != EOF)
     {
         if (ch == *argv[2])
         {
             printf("%c found", ch);
+            found = 1;
             break;
         }
     }
+    if (!found)
+        printf("Not found\n");
     fclose(fp);
 
     return 0;
