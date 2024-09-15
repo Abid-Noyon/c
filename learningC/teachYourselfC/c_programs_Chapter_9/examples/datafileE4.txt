@@ -1,1 +1,1 @@
-This data will be written in the desired file you want.
+12345.342000 1908 hello,Abid's, world!

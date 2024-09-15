@@ -53,7 +53,7 @@ int main(int argc, char *argv[])
  */
 
 // practice 1
-#include <stdio.h>
+/* #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -121,6 +121,79 @@ int main(int argc, char *argv[])
     if (fclose(fp) == EOF) // with error checking
     {
         printf("cannot close the file\n");
+        exit(1);
+    }
+
+    return 0;
+} */
+
+// practice 12 sep, 24
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main(int argc, char *argv[])
+{
+    FILE *fp;
+    char str[80];
+    // check file name specified or not
+    if (argc != 2)
+    {
+        printf("Please specify file name first.\n");
+        exit(1);
+    }
+    // now lets open file, to open file we must need a file pointer so lets declare it at first
+    if ((fp = fopen(argv[1], "w")) == NULL)
+    {
+        printf("cant open file for creating.\n");
+        exit(1);
+    }
+    // now lets give instruction to user
+    printf("Enter character and to stop enter a blank line.\n");
+
+    // now lets take input from the user
+    do
+    {
+        printf(": ");
+        gets(str);
+        strcat(str, "\n");
+        if (*str != '\n')
+        {
+            fputs(str, fp);
+        }
+
+    } while (*str != '\n');
+
+    // input done now lets close the file
+    if (fclose(fp) == EOF)
+    {
+        printf("cannot close the file\n");
+        exit(1);
+    }
+
+    // now lets open the file for reading
+    if ((fp = fopen(argv[1], "r")) == NULL)
+    {
+        printf("cant open file for reading\n");
+        exit(1);
+    }
+
+    // showing output
+    do
+    {
+        fgets(str, 79, fp);
+        if (!feof(fp))
+        {
+            printf(str);
+        }
+
+    } while (!feof(fp));
+
+    // reading done now close the file
+    if (fclose(fp) == EOF)
+    {
+        printf("Cant close the file after reading\n");
         exit(1);
     }
 
