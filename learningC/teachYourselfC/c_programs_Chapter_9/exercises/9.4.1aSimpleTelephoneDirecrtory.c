@@ -4,7 +4,6 @@
 #include <stdlib.h>
 
 char names[100][40], numbers[100][40];
-
 int loc = 0;
 
 int menu(void);
@@ -55,7 +54,7 @@ int menu(void)
     do
     {
         printf("Enter your choice\n");
-        gets(str);
+        fgets(str, sizeof(str), stdin);
         i = atoi(str);
         printf("\n");
     } while (i < 1 || i > 5);
@@ -65,18 +64,19 @@ int menu(void)
 
 void enter(void)
 {
-    for (; loc < 100; loc++)
+    for (; loc < 100; loc++) // Update loop limit
     {
-        if (loc < 100)
-        {
-            printf("Enter name (leave empty to stop):\n");
-            // printf("Enter name and phone number:\n");
-            gets(names[loc]);
-            if (!*names[loc])
-                break;
-            printf("Enter phone number:\n");
-            gets(numbers[loc]);
-        }
+        printf("Enter name (leave empty to stop):\n");
+        fgets(names[loc], sizeof(names[loc]), stdin);
+        // Remove newline character from fgets
+        names[loc][strcspn(names[loc], "\n")] = '\0';
+
+        if (!*names[loc]) // Break if input is empty
+            break;
+
+        printf("Enter phone number:\n");
+        fgets(numbers[loc], sizeof(numbers[loc]), stdin);
+        numbers[loc][strcspn(numbers[loc], "\n")] = '\0';
     }
 }
 
@@ -86,9 +86,10 @@ void find(void)
     int i;
 
     printf("Enter name: ");
-    gets(name);
+    fgets(name, sizeof(name), stdin);
+    name[strcspn(name, "\n")] = '\0';
 
-    for (i = 0; i < 100; i++)
+    for (i = 0; i < loc; i++)
     {
         if (!strcmp(name, names[i]))
             printf("%s %s\n", names[i], numbers[i]);
@@ -106,10 +107,8 @@ void load(void)
     }
 
     loc = 0;
-    while (!feof(fp))
+    while (fscanf(fp, "%s %s", names[loc], numbers[loc]) == 2)
     {
-        fscanf(fp, "%s %s", names[loc], numbers[loc]);
-        printf("%s %s\n", names[loc], numbers[loc]);
         loc++;
     }
     fclose(fp);
@@ -120,11 +119,12 @@ void save(void)
     FILE *fp;
     int i;
 
-    if ((fp = fopen("phone", "w")) == NULL)
+    if ((fp = fopen("phone", "w")) == NULL) // Overwrite file
     {
         printf("Cannot open file\n");
         exit(1);
     }
+
     for (i = 0; i < loc; i++)
     {
         fprintf(fp, "%s %s\n", names[i], numbers[i]);
