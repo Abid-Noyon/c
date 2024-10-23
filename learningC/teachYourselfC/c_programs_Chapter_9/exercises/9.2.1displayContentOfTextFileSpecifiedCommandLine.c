@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
     // see if filename is specified
     if (argc != 2)
     {
-
+        printf("Please specify file and as command line arguement\n");
         exit(1);
     }
     if ((fp = fopen(argv[1], "r")) == NULL)
@@ -24,6 +24,5 @@ int main(int argc, char *argv[])
     fclose(fp);
     return 0;
 }
-
 
 // reading data from a file by command line arguements

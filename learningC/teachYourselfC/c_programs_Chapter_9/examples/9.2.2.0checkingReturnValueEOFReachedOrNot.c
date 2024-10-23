@@ -1,4 +1,4 @@
-/* #include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 
 int main(void)
@@ -48,7 +48,7 @@ int main(void)
     fclose(fp);
 
     return 0;
-} */
+}
 
 // for better version we will change reading section
 /* #include <stdio.h>
@@ -103,7 +103,7 @@ int main(void)
     return 0;
 } */
 
-// now see the more profession look
+/* // now see the more profession look
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -160,4 +160,4 @@ int main(void)
     fclose(fp);
 
     return 0;
-}
+} */
