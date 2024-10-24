@@ -146,7 +146,7 @@ int main(int argc, char *argv[])
         exit(1);
     }
 
-    // now open file 1 and to again for writing from file 2 to file 1
+    // now open file 1 and 2 again for writing from file 2 to file 1
     if ((fp1 = fopen(argv[1], "wb")) == NULL)
     {
         printf("Cannot open file 1\n");

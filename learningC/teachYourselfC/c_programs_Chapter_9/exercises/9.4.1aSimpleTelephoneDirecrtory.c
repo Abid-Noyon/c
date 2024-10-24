@@ -109,6 +109,7 @@ void load(void)
     loc = 0;
     while (fscanf(fp, "%s %s", names[loc], numbers[loc]) == 2)
     {
+        printf("%s %s\n", names[loc], numbers[loc]);
         loc++;
     }
     fclose(fp);

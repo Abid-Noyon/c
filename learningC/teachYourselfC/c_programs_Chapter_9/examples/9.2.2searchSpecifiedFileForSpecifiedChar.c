@@ -44,7 +44,7 @@ int main(int argc, char *argv[])
     char ch;
     if (argc != 3)
     {
-        printf("Please enter a file name and char as command line arguement formate: \n");
+        printf("Please enter a file name and char as command line arguement formate.\n");
         exit(1);
     }
 

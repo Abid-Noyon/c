@@ -172,7 +172,7 @@ int main(int argc, char *argv[])
         exit(1);
     }
 
-    // now lets open the file for reading
+    // now lets reopen the file for reading
     if ((fp = fopen(argv[1], "r")) == NULL)
     {
         printf("cant open file for reading\n");
