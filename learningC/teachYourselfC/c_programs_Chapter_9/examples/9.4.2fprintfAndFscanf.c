@@ -63,7 +63,7 @@ int main(int argc, char *argv[])
         exit(1);
     }
     //lets put data to the file
-    fprintf(fp, "%f %d %s", 12345.342, 1908, "hello,Abid's, world!");
+    fprintf(fp, "%f %d %s", 12345.342, 1908, "hello, Abid's, world!");
     // data writing done now lets close the file
     if (fclose(fp)==EOF)
     {

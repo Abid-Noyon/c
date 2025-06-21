@@ -188,7 +188,7 @@ int main(void)
     {
         if ((fputc(*p, fp)) == EOF)
         {
-            printf("Error wtring file\n");
+            printf("Error writing file\n");
             exit(1);
         }
         p++;
